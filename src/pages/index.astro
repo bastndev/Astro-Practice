@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 ---
 
 <Layout title="Practice">
@@ -10,17 +11,25 @@ import Badge from "../components/Badge.astro";
 				Gohit Bastian <a
 					href="https://www.linkedin.com/in/bastndev"
 					target="_blank"
-					class="flex justify-center items-center">
+					class="flex justify-center items-center"
+				>
 					<Badge> CEO and Developer</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl opacity-70">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-				reiciendis atque incidunt possimus ad temporibus, sapiente voluptate
-				fuga? Debitis cumque, doloremque itaque cupiditate dicta fuga quod ipsam
-				nam molestiae earum!
+			<h2 class="text-2xl text-wrap">
+				<span class="text-blue-500">Lorem ipsum</span>, dolor sit amet
+				consectetur adipisicing elit. Unde reiciendis atque incidunt possimus ad
+				temporibus, sapiente voluptate fuga? Debitis cumque, doloremque itaque
+				cupiditate dicta fuga quod ipsam nam molestiae earum!
 			</h2>
-			<ul></ul>
+			<ul>
+				<li>
+					<a href="https://github.com/bastndev">
+						<LinkedinIcon class="w-6 h-6" />
+						Github</a
+					>
+				</li>
+			</ul>
 		</section>
 	</main>
 </Layout>
