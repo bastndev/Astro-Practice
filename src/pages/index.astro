@@ -4,11 +4,12 @@ import Badge from "../components/Badge.astro";
 import SocialPill from "../components/SocialPill.astro";
 import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
+import MailIcon from "../components/icons/MailIcon.astro";
 ---
 
-<Layout title="Practice">
+<Layout title="Practice" description="Practice Astro in 2024">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<section class="w-full mx-auto lg:w-[740px] py-40">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Gohit Bastian <a
 					href="https://www.linkedin.com/in/bastndev"
@@ -27,12 +28,16 @@ import GithubIcon from "../components/icons/GithubIcon.astro";
 			<ul>
 				<nav class="flex gap-x-4 mt-5">
 					<SocialPill href="https://github.com/bastndev">
-						<GithubIcon class="w-6 h-6" />
+						<GithubIcon class="size-6" />
 						Github
 					</SocialPill>
 					<SocialPill href="https://www.linkedin.com/in/bastndev/">
-						<LinkedinIcon class="w-6 h-6" />
+						<LinkedinIcon class="size-6" />
 						Linkedin
+					</SocialPill>
+					<SocialPill href="https://www.linkedin.com/in/bastndev/">
+						<MailIcon class="size-6" />
+						basd3v@gmail.com
 					</SocialPill>
 				</nav>
 			</ul>
