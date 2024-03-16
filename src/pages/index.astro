@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Expirencie from "../components/Expirencie.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
 import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
@@ -10,7 +11,8 @@ import MailIcon from "../components/icons/MailIcon.astro";
 
 <Layout title="Practice" description="Practice Astro in 2024">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-40">
+		<!-- --- --- --- --- --First page -->
+		<SectionContainer class="py-24 pb-20">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Gohit Bastian <a
 					href="https://www.linkedin.com/in/bastndev"
@@ -42,9 +44,12 @@ import MailIcon from "../components/icons/MailIcon.astro";
 					</SocialPill>
 				</nav>
 			</ul>
-		</section>
-		<section>
+		</SectionContainer>
+
+		<!-- --- --- --- --- --Second page -->
+		<SectionContainer>
+			<h2 class="text-2xl font-semibold mb-4 text-blue-600">My Expirencie</h2>
 			<Expirencie />
-		</section>
+		</SectionContainer>
 	</main>
 </Layout>
